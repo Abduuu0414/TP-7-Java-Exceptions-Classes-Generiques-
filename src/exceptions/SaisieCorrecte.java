@@ -21,16 +21,16 @@ public class SaisieCorrecte {
 
         while (!saisieValide) {
             try {
-                System.out.print("Veuillez saisir un entier supérieur à 10 : ");
+                System.out.print("Veuillez saisir un entier superieur à 10 : ");
                 nombre = scanner.nextInt();
 
                 if (nombre <= 10) {
-                    throw new NombreTropPetitException("Erreur : L'entier saisi doit être supérieur à 10.");
+                    throw new NombreTropPetitException("Erreur : L'entier saisi doit être superieur à 10.");
                 }
 
                 saisieValide = true; 
             } catch (InputMismatchException e) {
-                System.out.println("Erreur : Vous n'avez pas saisi un entier valide. Veuillez réessayer.");
+                System.out.println("Erreur : Vous n'avez pas saisi un entier valide. Veuillez reessayer.");
                 scanner.next(); 
             }
         }

@@ -25,7 +25,7 @@ public abstract class Personne {
     public abstract double calculerSalaire();
 
     public String affiche() {
-        return "ID: " + id + ", Nom: " + nom + ", Prénom: " + prenom + ", Salaire: " + salaire;
+        return "ID: " + id + ", Nom: " + nom + ", Prenom: " + prenom + ", Salaire: " + salaire;
     }
 }
 

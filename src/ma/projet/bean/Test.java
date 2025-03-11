@@ -22,7 +22,7 @@ import ma.projet.bean.Manager;
 public class Test {
     public static void listerPersonnes(List<? extends Personne> personnes) {
         for (Personne personne : personnes) {
-            System.out.println(personne.affiche() + ", Salaire calculé: " + personne.calculerSalaire());
+            System.out.println(personne.affiche() + ", Salaire calcule: " + personne.calculerSalaire());
         }
     }
 

@@ -26,6 +26,6 @@ public class Developpeur extends Personne {
 
     @Override
     public String affiche() {
-        return super.affiche() + ", Spécialité: " + specialite;
+        return super.affiche() + ", Specialité: " + specialite;
     }
 }

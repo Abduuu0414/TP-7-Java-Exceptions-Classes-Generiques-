@@ -35,18 +35,18 @@ public class Fibonacci {
 
         while (!saisieValide) {
             try {
-                System.out.print("Veuillez saisir un entier supérieur à 0 : ");
+                System.out.print("Veuillez saisir un entier superieur à 0 : ");
                 nombre = scanner.nextInt();
 
-                // Vérifier si le nombre est supérieur à 0
+                // Verifier si le nombre est superieur à 0
                 if (nombre <= 0) {
-                    throw new NombreInvalideException("Erreur : L'entier saisi doit être supérieur à 0.");
+                    throw new NombreInvalideException("Erreur : L'entier saisi doit etre superieur à 0.");
                 }
 
                 saisieValide = true; // Si la saisie est valide, on sort de la boucle
             } catch (InputMismatchException e) {
-                System.out.println("Erreur : Vous n'avez pas saisi un entier valide. Veuillez réessayer.");
-                scanner.next(); // Vide le buffer du scanner pour éviter une boucle infinie
+                System.out.println("Erreur : Vous n'avez pas saisi un entier valide. Veuillez reessayer.");
+                scanner.next(); // Vide le buffer du scanner pour eviter une boucle infinie
             }
         }
 
@@ -58,7 +58,7 @@ public class Fibonacci {
             int n = saisirEntierPositif();
 
             int resultat = fibonacci(n);
-            System.out.println("Le " + n + "ème nombre de Fibonacci est : " + resultat);
+            System.out.println("Le " + n + "eme nombre de Fibonacci est : " + resultat);
         } catch (NombreInvalideException e) {
             System.out.println(e.getMessage());
         }
